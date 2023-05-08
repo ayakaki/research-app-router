@@ -2,14 +2,14 @@
 import { checkString } from '@/utils/checkString';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-type Data = {
+export type TrialData = {
   now: string;
   id: string;
 };
 
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>
+  res: NextApiResponse<TrialData>
 ) {
   const nowUTC: Date = new Date();
   const nowJST: string = new Date(nowUTC).toLocaleString('ja-JP', {
