@@ -1,11 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import { TrialData } from '@/models/trialData';
 import { checkString } from '@/utils/checkString';
 import type { NextApiRequest, NextApiResponse } from 'next';
-
-export type TrialData = {
-  now: string;
-  id: string;
-};
 
 export default function handler(
   req: NextApiRequest,
@@ -17,13 +13,13 @@ export default function handler(
   });
 
   // レスポンスヘッダーにCORSを許可するオリジンを設定する
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.setHeader('Access-Control-Allow-Origin', '*');
 
   // リクエストの'/api/trial/{id}'の{id}を取得する
   const { id } = req.query;
 
   if (!checkString(id)) {
-    res.status(400).json({ now: nowJST, id: '' }); // 400 Bad Request
+    res.status(400).json({ now: nowJST, id: 'not include id' }); // 400 Bad Request
     return;
   }
 
