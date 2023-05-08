@@ -1,4 +1,4 @@
-import { TrialData } from '@/pages/api/trial/[id]';
+import { TrialData } from '@/models/trialData';
 import { myAxiosInstance } from './myAxiosInstance';
 
 export const getTrialData = async (id: string): Promise<TrialData> => {
