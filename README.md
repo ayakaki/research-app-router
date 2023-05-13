@@ -4,7 +4,7 @@ Next.js のバージョンが 13.4 に上がり、App Router が Stable 扱い�
 
 ## RESEARCH CONTENTS
 
-- RSC 記載のデータフェッチはサーバー側で行われる（データフェッチはサーバー側での）。
+- RSC 記載のデータフェッチはサーバー側で行われる
 - RSC の基本は、サーバー側でできる hydration(JavaScript の流し込み)はサーバー側で行なっておいて、ブラウザ側で処理するところ以外は事前にやっておこうという話
 - Client Component は末端に寄せるのが Next.js によって推奨されている ※[参考](https://nextjs.org/docs/app/building-your-application/rendering#static-and-dynamic-rendering-on-the-server)
 - 👆 とあるが、Clinent Component が親になれないわけではない ※[参考](https://zenn.dev/yumemi_inc/articles/next-13-app-overview#client-component-%E3%81%AF%E6%9C%AB%E7%AB%AF%E3%81%B8)
