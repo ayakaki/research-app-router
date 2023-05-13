@@ -17,7 +17,9 @@ app.get('/type-a', (req, res) => {
 });
 
 app.get('/type-b', (req, res) => {
-  res.send(typeB);
+  setTimeout(() => {
+    res.send(typeB);
+  }, 3000);
 });
 
 const port = process.env.PORT || 3010;

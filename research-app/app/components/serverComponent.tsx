@@ -1,4 +1,4 @@
-import { fetchData } from '@/app/services/fetchData';
+import { fetchData } from '@/app/repositories/fetchData';
 import { ClientComponent } from './clientComponent';
 import { ApiType } from '@/app/models/apiType';
 
