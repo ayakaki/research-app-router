@@ -26,7 +26,7 @@ Next.js のバージョンが 13.4 に上がり、App Router が Stable 扱い�
 
 ### ブラウザの動き
 
-![rsc](https://github.com/ayakaki/research-rsc/assets/65984887/f88ae5db-3278-4dad-b755-f91f27745132)
+![rsc-01](https://github.com/ayakaki/research-rsc/assets/65984887/5da9eb72-2bdf-4406-8a99-8c571dd88796)
 
 ### ネットワーク
 
