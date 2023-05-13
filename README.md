@@ -1,4 +1,4 @@
-# research-rsc
+# research-app-router
 
 Next.js のバージョンが 13.4 に上がり、App Router が Stable 扱いとなった。App Router では、React Server Component (RSC) をフル活用できるため、RSC について抑えたく調査を行なった。
 
