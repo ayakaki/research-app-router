@@ -1,16 +1,23 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
+
+// CORSミドルウェアを使って全てのCORSを許可
+app.use(cors());
 
 app.use(express.json());
 
-const courses = [
-  { id: 1, name: 'computer science' },
-  { id: 2, name: 'information technology' },
-  { id: 3, name: 'business intelligence' },
-];
+const typeA = { id: 1, type: 'api-type-A' };
+const typeB = { id: 2, type: 'api-type-B' };
 
-app.get('/', (req, res) => {
-  res.send(courses);
+app.get('/type-a', (req, res) => {
+  setTimeout(() => {
+    res.send(typeA);
+  }, 3000);
+});
+
+app.get('/type-b', (req, res) => {
+  res.send(typeB);
 });
 
 const port = process.env.PORT || 3010;
