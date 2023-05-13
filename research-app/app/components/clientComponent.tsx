@@ -14,7 +14,6 @@ export const ClientComponent: React.FC<Props> = (props: Props) => {
 
   const fetchInitialData = async () => {
     const data = await fetchData('type-b');
-    console.log(data);
   };
 
   fetchInitialData();
