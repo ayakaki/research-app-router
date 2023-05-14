@@ -3,7 +3,7 @@ import { ClientComponent } from './clientComponent';
 import { ApiType } from '@/app/models/apiType';
 
 const fetchInitialData = async () => {
-  const data = await fetchData('type-a');
+  const data = await fetchData('type-a', 3);
   console.log(data);
   return data;
 };
@@ -16,6 +16,7 @@ export const ServerComponent = async () => {
       <h2>ServerComponent部分</h2>
       <p>apiData.id: {apiData.id}</p>
       <p>apiData.type: {apiData.type}</p>
+      <p>apiData.now: {apiData.now}</p>
       <br />
       <ClientComponent apiData={apiData} />
     </>

@@ -28,6 +28,7 @@ export const ClientComponent: React.FC<Props> = (props: Props) => {
       <p>親コンポーネント（=ServerComponent）からの受取データ</p>
       <p>　props.apiData.id: {props.apiData.id}</p>
       <p>　props.apiData.type: {props.apiData.type}</p>
+      <p>　props.apiData.now: {props.apiData.now}</p>
       <p>子コンポーネントでの取得データ</p>
       <p>
         　childApiData.type: {childApiData === undefined ? '' : childApiData.id}
@@ -35,6 +36,9 @@ export const ClientComponent: React.FC<Props> = (props: Props) => {
       <p>
         　childApiData.type:{' '}
         {childApiData === undefined ? '' : childApiData.type}
+      </p>
+      <p>
+        　childApiData.now: {childApiData === undefined ? '' : childApiData.now}
       </p>
     </>
   );
