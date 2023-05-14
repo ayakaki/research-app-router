@@ -7,18 +7,17 @@ app.use(cors());
 
 app.use(express.json());
 
-const typeA = { id: 1, type: 'api-type-A' };
-const typeB = { id: 2, type: 'api-type-B' };
-
 app.get('/type-a', (req, res) => {
+  const resData = { id: 1, type: 'api-type-A', now: new Date() };
   setTimeout(() => {
-    res.send(typeA);
+    res.send(resData);
   }, 3000);
 });
 
 app.get('/type-b', (req, res) => {
+  const resData = { id: 2, type: 'api-type-B', now: new Date() };
   setTimeout(() => {
-    res.send(typeB);
+    res.send(resData);
   }, 3000);
 });
 
