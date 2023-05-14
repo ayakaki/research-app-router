@@ -9,6 +9,7 @@ Next.js のバージョンが 13.4 に上がり、App Router が Stable 扱い�
 - Client Component は末端に寄せるのが Next.js によって推奨されている ※[参考](https://nextjs.org/docs/app/building-your-application/rendering#static-and-dynamic-rendering-on-the-server)
 - 👆 とあるが、Clinent Component が親になれないわけではない ※[参考](https://zenn.dev/yumemi_inc/articles/next-13-app-overview#client-component-%E3%81%AF%E6%9C%AB%E7%AB%AF%E3%81%B8)
 - Suspense と併せて記載するのが基本
+- ISR の動きは fetch() 単位にて、revalidate を使用する
 
 ## HOW TO USE
 
@@ -31,6 +32,10 @@ Next.js のバージョンが 13.4 に上がり、App Router が Stable 扱い�
 ### ネットワーク
 
 ![rsc_console](https://github.com/ayakaki/research-rsc/assets/65984887/2df4f27e-0f68-4041-83a2-defeeb1391d8)
+
+### revalidate
+
+![revalidate](https://github.com/ayakaki/research-app-router/assets/65984887/8cb78730-3b49-49f2-8399-a922a8e78500)
 
 ## 参考記事
 
