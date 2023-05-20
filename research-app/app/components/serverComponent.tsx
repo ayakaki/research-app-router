@@ -1,5 +1,6 @@
 import { fetchData } from '@/app/repositories/fetchData';
 import { ClientComponent } from './clientComponent';
+import { ServerComponentChild } from './serverComponentChild';
 import { ApiType } from '@/app/models/apiType';
 
 const fetchInitialData = async () => {
@@ -19,6 +20,8 @@ export const ServerComponent = async () => {
       <p>apiData.now: {apiData.now}</p>
       <br />
       <ClientComponent apiData={apiData} />
+      {/* @ts-expect-error Server Component */}
+      <ServerComponentChild text="hoge" />
     </>
   );
 };
